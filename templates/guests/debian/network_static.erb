@@ -7,4 +7,10 @@ iface <%= options[:device] %> inet static
 <% if options[:gateway] %>
       gateway <%= options[:gateway] %>
 <% end %>
+<% if options[:dns_nameserver] %>
+      dns-nameservers <%= options[:dns_nameserver] %>
+<% end %>
+<% if options[:dns_search] %>
+      dns-search <%= options[:dns_search] %>
+<% end %>
 #VAGRANT-END
